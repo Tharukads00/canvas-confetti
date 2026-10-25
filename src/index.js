@@ -13,7 +13,8 @@ btn.addEventListener('click', ()=>{
             x:Math.random(),
             y:Math.random()
         },
-        colors:[_.sample(colors_arr)]
+        // colors:[_.sample(colors_arr)]
+        colors:["green"]
     })
     })
     
