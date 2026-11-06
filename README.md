@@ -3,7 +3,7 @@
 <div align="center">
 
 [![Live Demo](https://img.shields.io/badge/🚀%20Live%20Demo-Visit%20Page-brightgreen?style=for-the-badge)](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/)
-[![GitHub Pages](https://tharukads00.github.io/canvas-confetti/)](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/)
+[![GitHub Pages](https://img.shields.io/badge/Hosted%20on-GitHub%20Pages-blue?style=for-the-badge&logo=github)]([https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/](https://tharukads00.github.io/canvas-confetti/))
 [![Webpack](https://img.shields.io/badge/Bundler-Webpack%205-8DD6F9?style=for-the-badge&logo=webpack)](https://webpack.js.org/)
 
 > Click the **Yay!** button and watch confetti burst from a random spot on the screen — built with dynamic imports, Lodash, and Webpack.
