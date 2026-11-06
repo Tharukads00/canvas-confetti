@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+# Trigger: runs every time code is pushed to the main branch
+on:
+  push:
+    branches:
+      - main   # change to "master" if your default branch is master
+
+# Allow the workflow to write to the repo (needed to push the dist to gh-pages)
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    name: Build & Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the source code
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Set up Node.js (match the version you use locally)
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      # 3. Install dependencies (ci is faster & deterministic in CI)
+      - name: Install dependencies
+        run: npm ci
+
+      # 4. Build the project → produces the dist/ folder
+      - name: Build (webpack)
+        run: npm run build
+
+      # 5. Deploy the dist/ folder to the gh-pages branch
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}   # auto-provided — no setup needed
+          publish_dir: ./dist                          # folder to publish
+          publish_branch: gh-pages                    # target branch
+
