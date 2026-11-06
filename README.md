@@ -14,7 +14,7 @@
 
 ## 🌐 Live Page
 
-👉 **[https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/)**
+👉 **[[https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/](https://YOUR-USERNAME.github.io/YOUR-REPO-NAME/)](https://github.com/Tharukads00/canvas-confetti/deployments/github-pages)**
 
 > [!TIP]
 > Replace `YOUR-USERNAME` and `YOUR-REPO-NAME` with your actual GitHub username and repository name after pushing to GitHub.
